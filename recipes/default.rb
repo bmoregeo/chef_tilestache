@@ -12,7 +12,7 @@ python_pip "werkzeug"
 
 
 
-for pkg in ['libmapnik', 'libmapnik-dev', 'mapnik-utils', 'python-mapnik'] do
+for pkg in ['libmapnik2.2', 'libmapnik2-dev', 'mapnik-utils', 'python-mapnik'] do
 	package pkg
 end
 
