@@ -1,11 +1,3 @@
-apt_repository 'mapnik' do
-	uri "http://ppa.launchpad.net/mapnik/v2.2.0/ubuntu"
-	distribution node['lsb']['codename']
-	components ['main']
-	keyserver 'keyserver.ubuntu.com'
-	key "5D50B6BA"
-end
-
 package "python-dev"
 
 for pil_dependency in ["libjpeg-dev", "libjpeg-dev", "libfreetype6", "libfreetype6-dev", "zlib1g-dev"] do
