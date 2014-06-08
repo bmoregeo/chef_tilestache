@@ -4,7 +4,7 @@ for pil_dependency in ["libjpeg-dev", "libjpeg-dev", "libfreetype6", "libfreetyp
 	package pil_dependency
 end
 
-python_pip "PIL"
+python_pip "Pillow-PIL"
 python_pip "modestmaps"
 python_pip "simplejson"
 python_pip "werkzeug"
