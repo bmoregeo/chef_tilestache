@@ -1,6 +1,6 @@
 package "python-dev"
 
-for pil_dependency in ["libjpeg", "libjpeg-dev", "libfreetype6", "libfreetype6-dev", "zlib1g-dev"] do
+for pil_dependency in ["libjpeg-dev", "libjpeg-dev", "libfreetype6", "libfreetype6-dev", "zlib1g-dev"] do
 	package pil_dependency
 end
 
