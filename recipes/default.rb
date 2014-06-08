@@ -1,3 +1,9 @@
+package "python-dev"
+
+for pil_dependency in ["libjpeg", "libjpeg-dev", "libfreetype6", "libfreetype6-dev", "zlib1g-dev"] do
+	package pil_dependency
+end
+
 python_pip "PIL"
 python_pip "modestmaps"
 python_pip "simplejson"
