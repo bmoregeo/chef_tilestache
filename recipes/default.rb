@@ -1,19 +1,17 @@
-package "python-dev"
 
-for pil_dependency in ["libjpeg-dev", "libjpeg-dev", "libfreetype6", "libfreetype6-dev", "zlib1g-dev"] do
-	package pil_dependency
+# Install dependencies for building and python imaging
+for apt_dependency in ["python-dev", "build-essentail", "libjpeg-dev", "libjpeg-dev", "libfreetype6", "libfreetype6-dev", "zlib1g-dev", "python-imaging"] do
+	package apt_dependency
 end
 
-package "python-imaging"
-
-python_pip "modestmaps"
-python_pip "simplejson"
-python_pip "werkzeug"
-
-
+# Install pip packages for 
+for pip_pkg in ["modestmaps", "simplejson", "werkzeug", "uwsgi", "python-shapely"] do
+	python_pip pip_pkg
+end
 
 for pkg in ['libmapnik2.2', 'libmapnik2-dev', 'mapnik-utils', 'python-mapnik'] do
 	package pkg
 end
+
 
 python_pip "tilestache"
