@@ -1,4 +1,5 @@
 # TileStache Chef Recipe
+A chef recipe for installing TileStache.
 
 ## Dependency
 
@@ -8,5 +9,4 @@
 * [postgis](https://github.com/bmoregeo/chef_postgis)
 
 ## Attributes
-
-	sss
+*None*
