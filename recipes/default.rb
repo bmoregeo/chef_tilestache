@@ -7,7 +7,7 @@ for apt_dependency in ["python-dev", "build-essential", "libjpeg-dev",
 end
 
 # Install pip packages for 
-for pip_dependency in ["modestmaps", "simplejson", "werkzeug", "uwsgi", "python-shapely"] do
+for pip_dependency in ["modestmaps", "simplejson", "werkzeug", "uwsgi", "Shapely"] do
 	python_pip pip_dependency
 end
 
